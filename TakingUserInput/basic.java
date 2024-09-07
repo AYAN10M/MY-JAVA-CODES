@@ -1,9 +1,7 @@
-package TakingUserInput;
-
 /* java.util.Scanner is a class that is part of the java.util package.
    It allows us to take various types of input from the user, such as integers, strings, floats, etc. */
 
-   import java.util.Scanner;
+import java.util.Scanner;
 
 public class basic {
     public static void main(String[] args) {
@@ -13,7 +11,7 @@ public class basic {
 
         // Taking integer input
         // nextInt() method reads the next integer input from the user.
-        // It does not consume the newline character ('\n') left in the input buffer.
+        // It does not consume the newline character ('\n') left in the input buffer.w
         System.out.print("Enter a number: ");
         // Reads an integer
         int a = S.nextInt();
