@@ -17,6 +17,6 @@ class Test{
         catch(Exception e){
             System.out.println("Something went wrong !!");
         }
-
+        sc.close();
     }
 }
