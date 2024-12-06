@@ -1,6 +1,18 @@
 import java.util.Scanner;
 
+class Box {
+
+    int length;
+    int width;
+    int height;
+
+    int volume() {
+        return length * width * height;
+    }
+}
+
 public class Example1 {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Box b1 = new Box();
@@ -14,17 +26,6 @@ public class Example1 {
 
         System.out.println("The volume of the box is " + b1.volume());
         b1.volume();
-    }
-}
-
-class Box {
-    int length;
-    int width;
-    int height;
-
-    int volume()
-    {
-        int vol = length * width * height;
-        return vol;
+        sc.close();
     }
 }

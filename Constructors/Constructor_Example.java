@@ -1,15 +1,13 @@
-package Constructors;
 
-class Book
-{
+class Book {
+
     String title;
     String author;
     int pages;
     int price;
 
     // Non Parameterized Constructors
-    Book()
-    {
+    Book() {
         title = "Java The Complete Reference";
         author = "Herbert Schildt";
         pages = 1208;
@@ -17,20 +15,20 @@ class Book
     }
 
     // Parameterized Constructors
-    Book(String title, String author, int pages, int price)
-    {
+    Book(String title, String author, int pages, int price) {
         this.title = title;
         this.author = author;
         this.pages = pages;
         this.price = price;
     }
 
-    void display(){
+    void display() {
         System.out.println(title + " is written by " + author + " and it costs " + price);
     }
 }
 
-public class Example1 {
+public class Constructor_Example {
+
     public static void main(String[] args) {
         Book b1 = new Book();
         b1.display();
@@ -38,4 +36,5 @@ public class Example1 {
         Book b2 = new Book("Let us C", "Yashavant Kanetkar", 743, 400);
         b2.display();
     }
+
 }
