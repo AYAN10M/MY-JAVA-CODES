@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 class Stack {
@@ -7,8 +8,7 @@ class Stack {
     int[] stack;
 
     // initialize the stack
-    Stack()
-    {
+    Stack() {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the size of the stack: ");
@@ -16,27 +16,24 @@ class Stack {
 
         this.top = -1;
         this.stack = new int[size];
-        
+
     }
 
-    boolean isEmpty()
-    {
+    boolean isEmpty() {
         if (top == -1) {
             return true;
         }
         return false;
     }
 
-    boolean isFull()
-    {
+    boolean isFull() {
         if (top == size - 1) {
             return true;
         }
         return false;
     }
 
-    void push(int data)
-    {
+    void push(int data) {
         if (isFull()) {
             System.out.println("Stack is full!");
             return;
@@ -44,8 +41,7 @@ class Stack {
         stack[++top] = data;
     }
 
-    int pop()
-    {
+    int pop() {
         if (isEmpty()) {
             System.out.println("Stack is empty!");
             return -1;
@@ -53,8 +49,7 @@ class Stack {
         return stack[top--];
     }
 
-    int peek()
-    {
+    int peek() {
         if (isEmpty()) {
             System.out.println("Stack is empty!");
             return -1;
@@ -63,14 +58,12 @@ class Stack {
     }
 }
 
-class StackTest
-{
-    public static void main(String[] args)
-    {
+class StackTest {
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack stack = new Stack();
-        while(true)
-        {
+        while (true) {
             System.out.println("Main Menu");
             System.out.println("1. Push");
             System.out.println("2. Pop");
@@ -78,8 +71,7 @@ class StackTest
             System.out.println("4. Exit");
             System.out.println("Enter your choice: ");
             int choice = sc.nextInt();
-            switch(choice)
-            {
+            switch (choice) {
                 case 1:
                     System.out.println("Enter the data: ");
                     int data = sc.nextInt();
