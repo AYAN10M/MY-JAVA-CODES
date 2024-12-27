@@ -12,7 +12,7 @@ class BankAccount {
         this.balance = balance;
     }
 
-    // Method to transfer money from person1 to person2
+    // Method to transfer money from person 1 to person 2
     public void transferMoney(BankAccount person1, BankAccount person2, int amount) {
         if (person1.balance >= amount) {
             person1.balance -= amount;
@@ -37,7 +37,7 @@ class BankAccount {
         person1.info();
         person2.info();
 
-        // Transfer money from person1 to person2
+        // Transfer money from person 1 to person 2
         person1.transferMoney(person1, person2, 1000);
 
         // Display updated account info after the transfer
