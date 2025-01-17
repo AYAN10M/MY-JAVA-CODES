@@ -27,7 +27,7 @@ public class Box {
         this.height = height;
     }
 
-    // Copy Constructor
+    // Copy Constructor -- Using object as parameter
     Box(Box b1) {
         this.length = b1.length;
         this.width = b1.width;
